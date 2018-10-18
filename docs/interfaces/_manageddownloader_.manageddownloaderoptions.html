@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>RangeInfo | @aws/s3-managed-download</title>
+	<title>ManagedDownloaderOptions | @aws/s3-managed-downloader</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -22,7 +22,7 @@
 						<li class="state loading">Preparing search index...</li>
 						<li class="state failure">The search index is not available</li>
 					</ul>
-					<a href="../index.html" class="title">@aws/s3-managed-download</a>
+					<a href="../index.html" class="title">@aws/s3-managed-downloader</a>
 				</div>
 				<div class="table-cell" id="tsd-widgets">
 					<div id="tsd-filter">
@@ -38,8 +38,6 @@
 							</div>
 							<input type="checkbox" id="tsd-filter-inherited" checked />
 							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
-							<input type="checkbox" id="tsd-filter-externals" checked />
-							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
 							<input type="checkbox" id="tsd-filter-only-exported" />
 							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
 						</div>
@@ -56,13 +54,13 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="../modules/_getinformationfromrange_.html">&quot;getInformationFromRange&quot;</a>
+					<a href="../modules/_manageddownloader_.html">&quot;ManagedDownloader&quot;</a>
 				</li>
 				<li>
-					<a href="_getinformationfromrange_.rangeinfo.html">RangeInfo</a>
+					<a href="_manageddownloader_.manageddownloaderoptions.html">ManagedDownloaderOptions</a>
 				</li>
 			</ul>
-			<h1>Interface RangeInfo</h1>
+			<h1>Interface ManagedDownloaderOptions</h1>
 		</div>
 	</div>
 </header>
@@ -72,8 +70,7 @@
 			<section class="tsd-panel tsd-comment">
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>Information on the start byte, end byte, and length
-						of a range of bytes.</p>
+						<p>Custom options for the Managed Download.</p>
 					</div>
 				</div>
 			</section>
@@ -81,7 +78,7 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">RangeInfo</span>
+						<span class="target">ManagedDownloaderOptions</span>
 					</li>
 				</ul>
 			</section>
@@ -92,9 +89,8 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_getinformationfromrange_.rangeinfo.html#endbyte" class="tsd-kind-icon">end<wbr>Byte</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_getinformationfromrange_.rangeinfo.html#length" class="tsd-kind-icon">length</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_getinformationfromrange_.rangeinfo.html#startbyte" class="tsd-kind-icon">start<wbr>Byte</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_manageddownloader_.manageddownloaderoptions.html#maxconcurrency" class="tsd-kind-icon">max<wbr>Concurrency</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_manageddownloader_.manageddownloaderoptions.html#maxpartsize" class="tsd-kind-icon">max<wbr>Part<wbr>Size</a></li>
 							</ul>
 						</section>
 					</div>
@@ -103,44 +99,32 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="endbyte" class="tsd-anchor"></a>
-					<h3>end<wbr>Byte</h3>
-					<div class="tsd-signature tsd-kind-icon">end<wbr>Byte<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<a name="maxconcurrency" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> max<wbr>Concurrency</h3>
+					<div class="tsd-signature tsd-kind-icon">max<wbr>Concurrency<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/SrutiG/aws-sdk-js-s3-transfer-manager/blob/b86c388/src/getInformationFromRange.ts#L12">getInformationFromRange.ts:12</a></li>
+							<li>Defined in ManagedDownloader.ts:20</li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="length" class="tsd-anchor"></a>
-					<h3>length</h3>
-					<div class="tsd-signature tsd-kind-icon">length<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<a name="maxpartsize" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> max<wbr>Part<wbr>Size</h3>
+					<div class="tsd-signature tsd-kind-icon">max<wbr>Part<wbr>Size<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/SrutiG/aws-sdk-js-s3-transfer-manager/blob/b86c388/src/getInformationFromRange.ts#L13">getInformationFromRange.ts:13</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="startbyte" class="tsd-anchor"></a>
-					<h3>start<wbr>Byte</h3>
-					<div class="tsd-signature tsd-kind-icon">start<wbr>Byte<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/SrutiG/aws-sdk-js-s3-transfer-manager/blob/b86c388/src/getInformationFromRange.ts#L11">getInformationFromRange.ts:11</a></li>
+							<li>Defined in ManagedDownloader.ts:19</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<dl class="tsd-comment-tags">
 							<dt>param</dt>
-							<dd><p>the starting byte of the range.</p>
+							<dd><p>size of a part in bytes.</p>
 							</dd>
 							<dt>param</dt>
-							<dd><p>the last byte of the range.</p>
-							</dd>
-							<dt>param</dt>
-							<dd><p>the length of the range.</p>
+							<dd><p>number of parts to download
+								in parallel.</p>
 							</dd>
 						</dl>
 					</div>
@@ -153,43 +137,37 @@
 					<li class="globals  ">
 						<a href="../globals.html"><em>Globals</em></a>
 					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="../modules/_manageddownload_.html">"<wbr>Managed<wbr>Download"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="../modules/_manageddownloadstream_.html">"<wbr>Managed<wbr>Download<wbr>Stream"</a>
-					</li>
 					<li class="current tsd-kind-external-module">
-						<a href="../modules/_getinformationfromrange_.html">"get<wbr>Information<wbr>From<wbr>Range"</a>
+						<a href="../modules/_manageddownloader_.html">"<wbr>Managed<wbr>Downloader"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="../modules/_getrangeofpart_.html">"get<wbr>Range<wbr>OfPart"</a>
+						<a href="../modules/_manageddownloaderstream_.html">"<wbr>Managed<wbr>Downloader<wbr>Stream"</a>
 					</li>
 				</ul>
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
+					<li class=" tsd-kind-class tsd-parent-kind-external-module">
+						<a href="../classes/_manageddownloader_.manageddownloader.html" class="tsd-kind-icon">Managed<wbr>Downloader</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="_manageddownloader_.getobjectstreaminput.html" class="tsd-kind-icon">Get<wbr>Object<wbr>Stream<wbr>Input</a>
+					</li>
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_getinformationfromrange_.rangeinfo.html" class="tsd-kind-icon">Range<wbr>Info</a>
+						<a href="_manageddownloader_.manageddownloaderoptions.html" class="tsd-kind-icon">Managed<wbr>Downloader<wbr>Options</a>
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_getinformationfromrange_.rangeinfo.html#endbyte" class="tsd-kind-icon">end<wbr>Byte</a>
+								<a href="_manageddownloader_.manageddownloaderoptions.html#maxconcurrency" class="tsd-kind-icon">max<wbr>Concurrency</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_getinformationfromrange_.rangeinfo.html#length" class="tsd-kind-icon">length</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_getinformationfromrange_.rangeinfo.html#startbyte" class="tsd-kind-icon">start<wbr>Byte</a>
+								<a href="_manageddownloader_.manageddownloaderoptions.html#maxpartsize" class="tsd-kind-icon">max<wbr>Part<wbr>Size</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
-					<li class=" tsd-kind-function tsd-parent-kind-external-module">
-						<a href="../modules/_getinformationfromrange_.html#getinformationfromrange" class="tsd-kind-icon">get<wbr>Information<wbr>From<wbr>Range</a>
-					</li>
 				</ul>
 			</nav>
 		</div>
